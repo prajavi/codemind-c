@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int n,sq,q,r,s=0,sqq,k=0,t,p;
+    scanf("%d",&n);
+    sq=n*n;
+    q=n;
+    while(q!=0)
+    {
+        r=q%10;
+        q=q/10;
+        s=s*10+r;
+    }
+    sqq=s*s;
+    t=sqq;
+    while(t!=0)
+    {
+        p=t%10;
+        t=t/10;
+        k=k*10+p;
+    }
+    if(sq==k)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
